@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+//一维数组的最大值
+// var arr1 = [1,3,5,6,7,8,89,9];
+// yiwei(arr1);
+// function yiwei(arr){
+// 	var max=arr[0];
+// 	for(var i=0;i<=arr.length-1;i++){
+// 		if(max<arr[i]){
+// 			max=arr[i];
+// 		}
+// 	}
+// 	console.log(max);
+//    }
+// //    
+// //    
+// //    
+//   yipx(arr1);
+// 	function yipx(arr){
+// 	var arr =[2,34,45,123,3,24,52];
+// 	for(var i = 0;i<=arr.length;i++){
+// 		for(var j =i+1;j<=arr.length;j++){
+// 			if(arr[i]<arr[j]){
+// 				var nu = arr[i];
+// 				arr[i] = arr[j];
+// 				arr[j] =nu;
+
+// 			}
+// 		}
+
+// 	}
+// 	console.log(arr);
+// 	}
+	//二维数组的最大值
+	// var feu =[
+	//          [20,45,4],
+	//          [56,10,5],
+	//          [14,54,9]
+	//          ];
+	// ewzd(feu);
+	// function ewzd(num) {
+	// var max=num[0][0];
+	// for(var i = 0;i<=num.length-1;i++){
+		
+	// 	for(var j = 0;j<=num[i].length-1;j++){
+	// 		if(max<num[i][j]){
+	// 			max=num[i][j];
+	// 		}	   
+	// 	}
+	// } 
+	// console.log(max);
+	// }
+
+//把数组中的空值去掉
+	// var arr =[1,2,3,,4,,5,,6,7,8];
+	// var newarr =[];
+	// for(var i= 0; i<arr.length;i++){
+	// 	if(arr[i]!=undefined){
+	// 		newarr[newarr.length]=arr[i];
+
+	// 	}
+
+	// }
+	// console.log(newarr);
+	// var arr =[4,5,6,,,7,,8,9,0];
+	// var newarr=[];
+	// for(var i =0;i<arr.length;i++){
+	// 	if((typeof arr[i] !='undefined')){
+	// 		newarr[newarr.length]=arr[i];
+
+	// 	}
+
+	// }
+	// console.log(newarr);
+	//
+	// 数据重载
+	//   var arr =[1,2,3,4,5,6,8,9];
+   
+	// function pull (arr){
+	// 	for(var i =1;i<arguments.length;i++){
+	// 		arr[arr.length]=arguments[i];
+			
+	// 	}
+	// 	console.log(arr);
+
+
+	// }
+	// pull(arr,2,23,4);
+	// 
+//
+// 	任意数值的排序 	var arr=[32,45,21,22,4,5,27];
+// 	xj(arr,">");
+// 
+// function xj(arr,type="<"){
+// 	// 第一
+// 	if(type=="<"){
+// 		sx(arr);
+
+// 	}else if(type==">"){
+// 		jx(arr);
+
+// 	}
+	// 第二
+	// type = type ==undefined ? "<" : type;
+	// 第三
+	
+
+// }
+
+
+
+
+//降序
+// 	 	function jx(arr){
+// 	for(var i =0;i<arr.length;i++){
+// 		for(var j =i+1;j<arr.length;j++){
+// 			if(arr[j]>arr[i]){
+// 				var sepm =arr[j]
+// 				arr[j] =arr[i] 
+// 				arr[i] =sepm
+
+// 			}
+
+// 		}
+
+// 	}
+// 	console.log(arr);
+// }
+// 升序
+// function sx(arr){
+// 	for(var i =0;i<arr.length;i++){
+// 		for(var j =i+1;j<arr.length;j++){
+// 			if(arr[j]<arr[i]){
+// 				var sepm =arr[j]
+// 				arr[j] =arr[i] 
+// 				arr[i] =sepm
+
+// 			}
+
+// 		}
+
+// 	}
+// 	console.log(arr);
+// }
+// 
+// 数组中间加符号
+//  var arr = [1,2,3,4,5,6,7];
+ 
+//  // console.log(newarr);
+//  function pj(arr,str="-"){ console.log(str)
+//  	var newarr ='';
+//  	for(var i =0;i<arr.length;i++){
+
+//  		if(i<arr.length-1){
+//  			newarr+=arr[i]+str;
+//  		}else{
+ 		
+//  		newarr+=arr[i]
+// }
+       
+        
+//  	}
+//  	return newarr;
+//  	// console.log(newarr);
+//  }
+//  console.log(pj(arr));
+//
+   // var arr =[1,2,3,4,5,6,6,7,8,9,0];
+   // for(var i=){
+
+   // }
+//
+//
+//  var relt=match(4,2,aa);
+//  console.log(relt);  
+// function match(num1,num2,fn){
+// 	return fn(num1,num2);
+
+// }
+
+//  function aa(num1,num2){
+//  	return num1-num2;
+
+//  }
+//  function bb(num1,num2){
+//  	return num1*2-num2;
+
+//  }
+//  function cc(num1,num2){
+//  	return num1*4-num2;
+
+//  }
+//  回调函数
+// var arr =[1,2,3,4,5,6,7,8,9,0];
+// function map (arr,fn){
+// 	var newarr=[];
+// 	for(var i=0;i<arr.length;i++){
+// 		newarr[newarr.length]=fn(arr[i])
+// 	}
+// 	return newarr;
+// }
+// var atle=map(arr,value => value*2);
+// console.log(atle);
+ 
+// 数据重载
+// function sun(){
+// 	if(arguments.length==1){
+// 		var sum=0;
+// 		for(var i=0;i<=arguments[0];i++){
+// 			sum+=i;
+
+// 		}
+// 		return sum;
+// 	}
+// }
+// var alt = sun(30);
+// console.log(alt);
+// 
+// 首次出现的位置
+    // var arr=[1,2,3,4,5,6,7];
+    
+    // console.log(lastindexof(arr,3));
+//     function indexof(arr,value){
+//     for(var i=0;i<arr.length;i++){
+//     	if(value==arr[i]){
+//     		return i;
+//     	}
+//     }
+//     return -1;
+// }
+// 
+// 在最后出现的位子
+    // function lastindexof(arr,value){
+    // 	for(var i=arr.length-1;i>=0;i--){
+    // 		if(value==arr[i]){
+    // 			return i;
+
+    // 		}
+    		
+    // 	}
+    // 	return -1;
+    // }
+//反转
+//  
+//  
+    // console.log(reverse(arr));
+    // function reverse(arr){
+    // 	var newarr=[];
+    // 	for(var i=arr.length-1;i>=0;i--){
+    // 		push(newarr,arr[i])
+
+    // 	}
+    // 	return newarr;
+
+    // }
+    // function push(arr,...rest){
+    // 	for(var i=0;i<rest.length;i++){
+    // 		arr[arr.length]=rest[i];
+    // 	}
+    // }
+    // 
+     //删除任意位置
+     // var arr=[3,4,5,6,7,8,9,0];
+    //  console.log(splice(arr,2,2));
+    // function spliceDelt(arr,pos,num){
+    //     var newarr=[];
+    //     for(var i=0;i<arr.length;i++){
+    //     	if(i>=pos&&i<pos+num){
+    //     		continue;
+
+    //     	}
+    //     	newarr[newarr.length]=arr[i];
+
+    //     }
+    //     return newarr;
+
+    // }
+    
+    // 任意位置添加
+    // console.log(spliceAdd(arr,2,"1","2","3"));
+    // function spliceAdd(arr,pos,...rest){
+    // 	var newarr=[];
+    // 	for(var i=0;i<pos;i++){
+    // 		newarr[newarr.length]=arr[i];
+    // 	}
+    // 	for(var i=0;i<rest.length;i++){
+    // 		newarr[newarr.length]=rest[i];
+    // 	}
+    // 	for(var i=pos;i<arr.length;i++){
+    // 		newarr[newarr.length]=arr[i]
+    // 	}
+    // 	return newarr;
+    // }
+    // 任意位置添加删除
+   
+    // function splice(arr,pos,num,...rest){
+    // 	var newarr=spliceDelt(arr,pos,num);
+    // 	if(rest.length>0){  	
+    // 		newarr=spliceAdd(newarr,pos,...rest);
+    // 	   }
+    // 	return newarr;
+    // }
+     // var arr=[3,4,5,6,7,8,9,0];
+
+    //  console.log(splice(arr,2,0,"a","w","y"));
+    //  
+    //  
+    //  
+    //  筛选任意值
+    // function filter(arr,fn){
+    // 	var newarr=[];
+    // 	for(var i=0;i<arr.length;i++){
+    // 		if(fn(arr[i])){
+    // 			newarr[newarr.length]=arr[i];
+    // 		}
+    // 	}
+    // 	return newarr;
+    // }
+    //     var Filt =filter(arr,function(value){
+    // 	return value>3;
+    // });
+
+    // console.log(Filt);
+    // 
+    // 
+    // some
+  //   function some(arr,fn){
+  //   	for(var i=0;i<arr.length;i++){
+  //   		if(fn(arr[i])){
+  //   			return true;
+  //   		}
+  //   	}
+  //   	return false;
+
+  //   }
+
+
+  //   function every(arr,fn){
+  //   	for(var i=0;i<arr.length;i++){
+  //   		if(!fn(arr[i])){
+  //   			return false;
+  //   		}
+  //   	}
+  //   	return true;
+
+  //   }
+
+
+  // var alt=some(arr,function(value){
+  // 	return value>2;
+  // })
+  // var alt1=every(arr,function(value){
+  // 	return value>0;
+  // })
+  // console.log(alt);
+  // console.log(alt1);
+  // 
+  // 
+  //递归函数的数组传值
+//   function copy(arr){
+//   	var newarr=[];
+//     for(var i=0;i<arr.length;i++){
+//     	if(typeof arr[i]=="object"){
+//     		newarr[i]=copy(arr[i]);
+//     	}else{
+//     		newarr[i]=arr[i];
+//     	}
+
+//     }
+//     return newarr;
+//   }
+
+// var arr=[1,2,3,4,5,6,7,["1","2","3"]];
+// var slt=copy(arr);
+// console.log(slt);
+// 
+// 
+// 
+// 箭头函数
+  // var sec = function (a,b){
+  // 	return a+b;
+  // }
+
+  
+  // var sec =(a,b)=>a+b;
+  // console.log(sec(4,2));
+</script>
+	
+</body>
+</html>  
